@@ -1,0 +1,37 @@
+{
+  "name": "graphql-form-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js",
+    "start-server": "nodemon --exec babel-node server.js",
+    "start-book": "nodemon --exec babel-node \"server book.js\"",
+    "start-user": "nodemon --exec babel-node \"server user.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-form": "nodemon --exec ts-node src/index.ts",
+    "start-ts": "nodemon --exec ts-node \"server rest.ts\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/federation": "^0.16.10",
+    "@apollo/gateway": "^0.16.9",
+    "apollo-datasource-rest": "^0.9.3",
+    "apollo-server": "^2.15.0",
+    "graphql": "^15.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "ts-node": "^8.10.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/node": "^7.10.3",
+    "@babel/plugin-transform-async-to-generator": "^7.10.1",
+    "@babel/plugin-transform-runtime": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@types/jsonwebtoken": "^8.5.0",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4",
+    "typescript": "^3.9.5"
+  }
+}
