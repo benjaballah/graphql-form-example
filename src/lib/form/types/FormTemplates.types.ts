@@ -3,7 +3,7 @@ export const FormTemplateTypes = `
     id: ID,
     children: [FormTemplateTree]
   }
-  type FormTemplateFieldsChoice {
+  type FormTemplateFields {
     id: ID!,
     type: String,
     label: String,
@@ -13,7 +13,7 @@ export const FormTemplateTypes = `
     defaultValue: String
   }
   type FormTemplatesSchema {
-    fields: [FormTemplateFieldsChoice],
+    fields: [FormTemplateFields],
     tree: [FormTemplateTree]
   }
   type FormTemplates {
